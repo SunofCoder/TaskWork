@@ -11,6 +11,7 @@ namespace RestApi.Models
     {
         public int Id { get; set; }
         [Required(AllowEmptyStrings = false)]
+
         public string? StudentName { get; set; }
         public string? StudentLastName { get; set; }
         public int AssignmentWeek { get; set; }
