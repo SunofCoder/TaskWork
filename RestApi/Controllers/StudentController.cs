@@ -87,12 +87,12 @@ namespace RestApi.Controllers
 
         public IActionResult updateStudentResult(int id, [FromBody] float reviewedResult)
         {
-            var studentResult = StudentList.Find(a => a.Id == id);
-            if (studentResult == null)
+            var homeworkResult = StudentList.Find(a => a.Id == id);
+            if (homeworkResult == null)
             {
                 return NotFound();
             }
-            studentResult.Result = reviewedResult;
+            homeworkResult.Result = reviewedResult;
             return Ok();
         }
 

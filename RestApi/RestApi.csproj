@@ -12,8 +12,14 @@
 
   <ItemGroup>
     <None Remove="Models\" />
+    <None Remove="Conctracts\" />
+    <None Remove="Middlewares\" />
+    <None Remove="Configurations\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="Conctracts\" />
+    <Folder Include="Middlewares\" />
+    <Folder Include="Configurations\" />
   </ItemGroup>
 </Project>
